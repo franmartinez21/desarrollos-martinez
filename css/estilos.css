@@ -1,0 +1,215 @@
+h1 {
+    color: rgb(82, 7, 7);
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 3rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "h1"
+        "ul";
+}
+
+.h1 {
+    grid-area: h1;
+}
+
+.ul {
+    grid-area: ul;
+}
+
+.listaMenu {
+    display: flex;
+    justify-content: center;
+}
+
+a {
+    color: white;
+    padding: 20px;
+    margin: 5px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: rgb(8, 8, 58);
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+    display: inline;
+}
+
+h3 {
+    color: rgb(250, 235, 215);
+    margin-top: 50px
+    grid-area titulo;
+    background-color: black;
+    text-align: center;
+}
+
+main {
+    text-align: center;
+}
+
+
+
+.parrafoUno {
+    color: black;
+    font-family: sans-serif;
+    grid-area: parrafo;
+}
+
+.parrafoDos {
+    color: black;
+    font-family: sans-serif;
+    grid-area: parrafo dos;
+}
+
+.div {
+    grid-area: imagen;
+}
+
+img {
+    height: 250px;
+    width: 250px;
+}
+
+.contactoInicial {
+    background-color: white;
+    font-weight: bolder;
+}
+
+.imagenTelefono {
+    height: 30px;
+    width: 30px;
+}
+
+.redesSociales {
+    background-color: rgb(174, 5, 5);
+}
+
+.videoAmbiente {
+    margin-top: 60px;
+}
+
+td {
+    background-color: rgb(36, 199, 36);
+}
+
+.tabla {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+h2 {
+    color: rgb(82, 7, 7);
+    margin-top: 60px;
+}
+
+.listaDesarrollos {
+    padding: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    font-weight: 500;
+    font-size: larger;
+    list-style-type: none;
+    background-image: url(https://cdn.bioguia.com/embed/9a716617910dcf8898ffca04302d6191554904549/conoce-mejores-edificios-sustentables.jpg);
+}
+
+.listadesarrollo {
+    display: list-item
+}
+
+.ciudadesDesarrollo {
+    margin-top: 40px;
+}
+
+.queHacemos {
+    margin-top: 60px;
+}
+
+.imgCasa {
+    height: 250px;
+    width: 250px;
+}
+
+.recursosHumanos {
+    color: black;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.formulario {
+    display: flex;
+    justify-items: center;
+
+}
+
+input {
+    font-family: cursive;
+}
+
+.saludoFinal {
+    font-weight: 600;
+}
+
+.formularioContacto {
+    margin-top: 60px;
+}
+
+.tituloProyectos {
+    text-align: center;
+    color: wheat;
+}
+
+.edificioConstruccion {
+    height: 680px;
+    width: 600px;
+}
+
+.proyectosConstruccion {
+    text-align: center;
+}
+
+@media screen and (max-width:425px){
+
+    .header {  display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "responsive";
+      }
+      
+      .responsive { grid-area: responsive; }
+      
+    .listaMenu {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    ul li a{
+        display: flex;
+        justify-content: center;
+    }
+    .imagenTelefono{
+margin-left: 197.5px;
+    }
+    iframe{
+        width: 300px;
+        height: 250px;
+    }
+    .footerDos{
+        display: flex;
+        justify-content: space-evenly;
+    }
+}
