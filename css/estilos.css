@@ -25,6 +25,11 @@ h1 {
     grid-area: ul;
 }
 
+ul li a:hover{
+    background-color: cadetblue;
+    transition: 1,5s;
+}
+
 .listaMenu {
     display: flex;
     justify-content: center;
